@@ -178,7 +178,7 @@ data:
         <provider id="s3" type="s3">
             <endpoint>{{ .Values.artifactory.persistence.awsS3.endpoint }}</endpoint>
             <httpsOnly>false</httpsOnly>
-            <httpPort>8080</httpPort>
+            <port>8080</port>
         {{- if .Values.artifactory.persistence.awsS3.roleName }}
             <roleName>{{ .Values.artifactory.persistence.awsS3.roleName }}</roleName>
             <refreshCredentials>true</refreshCredentials>
