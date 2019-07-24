@@ -187,7 +187,6 @@ data:
         {{- end }}
             <s3AwsVersion>{{ .Values.artifactory.persistence.awsS3.s3AwsVersion }}</s3AwsVersion>
             <testConnection>{{ .Values.artifactory.persistence.awsS3.testConnection }}</testConnection>
-            <httpsOnly>true</httpsOnly>
             <region>{{ .Values.artifactory.persistence.awsS3.region }}</region>
             <bucketName>{{ .Values.artifactory.persistence.awsS3.bucketName }}</bucketName>
         {{- if .Values.artifactory.persistence.awsS3.identity }}
